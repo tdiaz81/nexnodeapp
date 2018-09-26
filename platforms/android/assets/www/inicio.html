@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#2196f3">
+<title>Nex-Node</title>
+<!-- Font embedding link goes here -->
+<!-- http://maxartkiller.in/website/maxsmart/max_smart/ -->
+
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+<!-- CSS link goes here -->
+<link rel="stylesheet" href="css/framework7.material.min.css">
+<link rel="stylesheet" href="css/framework7.material.colors.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/swipebox.min.css">
+<link rel="stylesheet" href="css/maxframes.css">
+</head>
+<body class="theme-lightblue">
+
+<div class="statusbar-overlay"></div>
+
+<div class="panel-overlay"></div>
+
+<div class="panel panel-left panel-cover sidebar">
+    <div class="buttonbar row no-gutter">
+        <a href="#" onclick="salir()" class=" button azul col-100">Salir</a>
+    </div>
+  <div class="view ">
+    <div class=" ">
+      <div data-page="panel-left" class="sidemenu leftmenusmall gradient">
+        <div class="item-content userprofile">
+                <div class="item-media"><img src="img/pic1.png" width="44" alt=""/></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">E Munizaga</div>
+                  </div>
+                  <div class="item-subtitle">Pokytools</div>
+                </div>
+        </div>
+        <div class="page-content">
+            <div class="list-block accordion-list">
+              <ul class="menu">
+               <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title"><i class="fa fa-bullhorn"></i>Alertas</div>
+                    </div></a>
+					<div class="accordion-item-content">
+                    <div class="content-block">
+                        <ul>
+                            <li><a href="camara.html" data-panel="left" class="item-link  close-panel"><span>Cámaras</span></a></li>
+                            <li><a href="nodos.html" data-panel="left" class="item-link  close-panel"><span>Nodos</span></a></li>
+                            <li><a href="#" class="item-link close-panel"><span>Floating Speed Dial</span></a></li>
+                            <li><a href="#" class="item-link close-panel"><span>Landing</span></a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </li>
+				 <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                      <div class="item-title"><i class="fa fa-cog"></i>Ajustes</div>
+                    </div></a>
+					<div class="accordion-item-content">
+                    <div class="content-block">
+                        <ul>
+                            <li><a href="camara.html" data-panel="left" class="item-link  close-panel"><span>cámara</span></a></li>
+                            <li><a href="#" data-panel="right" class="item-link open-panel"><span>Reavel Sidemenu</span></a></li>
+                            <li><a href="#" class="item-link close-panel"><span>Floating Speed Dial</span></a></li>
+                            <li><a href="#" class="item-link close-panel"><span>Landing</span></a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+   
+    
+<div class="views pageview" >
+  <div class="view view-main">
+    <div class="pages">
+      <div data-page="index" class="page">
+		   <div class="navbar">
+				<div class="navbar-inner">
+				  <div class="left"><a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a></div>
+				  <div class="center">Nex-Node</div>
+				    <div class="right"><a href="camara.html" class="link icon-only"><i class="fa fa-video-camera"></i></a></div>
+				  
+				 
+				</div>
+			</div>
+			
+			<!-- Speed Dial Wrap -->
+		  <div class="speed-dial">
+			<!-- FAB inside will open Speed Dial actions -->
+			<a href="#" class="floating-button">
+			  <!-- First icon is visible when Speed Dial actions are closed -->
+			  <i class="icon icon-plus"></i>
+			  <!-- Second icon is visible when Speed Dial actions are opened -->
+			  <i class="icon icon-close"></i>
+			</a>
+			<!-- Speed Dial Actions -->
+			<div class="speed-dial-buttons">
+			  <!-- First Speed Dial button -->
+			  <a href="#">
+				<i class="fa fa-phone"></i>
+			  </a>
+			  <!-- Second Speed Dial  button -->
+			  <a href="#">
+				<i class="fa fa-bell-slash-o"></i>
+			  </a>
+			  <!-- Third Speed Dial  button -->
+			  <a href="#">
+				<i class="fa fa-bell-o"></i>
+			  </a>
+			</div>
+		  </div>
+		  <!-- End of Speed Dial -->
+		
+		  <div class="page-content landingpage">
+			<div class="page-content">
+   
+				<canvas id="video-canvas"></canvas>
+			</div>	
+			 <!-- Content block -->
+			<div class="content-block">
+			<h1>Alerta 22:00</h1>
+			</div>
+		  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- JS link goes here --> 
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/framework7.min.js"></script> 
+<script type="text/javascript" src="js/jquery.swipebox.js"></script> 
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="js/maxframes.js"></script>
+<script type="text/javascript" src="js/jsmpeg.min.js"></script>
+<script type="text/javascript" src="js/aes.js"></script>
+
+<script type="text/javascript" src="cordova.js"></script>
+
+
+</body>
+</html>

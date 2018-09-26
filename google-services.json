@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "223779304415",
+    "firebase_url": "https://notificacionestest-206118.firebaseio.com",
+    "project_id": "notificacionestest-206118",
+    "storage_bucket": "notificacionestest-206118.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223779304415:android:5d68b5bb376c1023",
+        "android_client_info": {
+          "package_name": "io.osen.heimdall2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223779304415-l15sqln2fnu7mbbns59it112c6nri9jg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "223779304415-l15sqln2fnu7mbbns59it112c6nri9jg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALgnaDuGM_ZzJ-Ag2n4OMRVseOZnFHFx4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
